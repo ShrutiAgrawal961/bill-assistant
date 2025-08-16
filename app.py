@@ -40,6 +40,7 @@ if uploaded_file is not None:
             schema_prompt = f"""
             Extract the following fields from this bill text and return as JSON:
             - Vendor Name
+            - Vendor Address
             - Date
             - Customer Name
             - Bill/Invoice Number
