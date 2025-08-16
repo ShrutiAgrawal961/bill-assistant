@@ -6,6 +6,8 @@ from openai import OpenAI
 import json
 import io
 
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+
 # Load API key from Streamlit secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
